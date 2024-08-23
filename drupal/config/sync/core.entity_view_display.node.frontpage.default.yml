@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.frontpage.field_content_elements
     - field.field.node.frontpage.field_excerpt
     - field.field.node.frontpage.field_image
-    - field.field.node.frontpage.field_selected_stays
     - node.type.frontpage
   module:
     - entity_reference_revisions
@@ -33,15 +32,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
-    region: content
-  field_selected_stays:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 3
     region: content
   links:
     settings: {  }

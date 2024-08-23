@@ -1,4 +1,4 @@
-// import { ArticleTeasers } from "@/components/article/article-teasers";
+import { StayTeasers } from "@/components/stay/stay-teasers";
 import type { FragmentParagraphLiftupStayFragment } from "@/lib/gql/graphql";
 
 export function ParagraphLiftupStay({
@@ -6,10 +6,9 @@ export function ParagraphLiftupStay({
 }: {
   paragraph: FragmentParagraphLiftupStayFragment;
 }) {
-  console.log("me", paragraph);
   return (
     <section>
-      <h1>hola hola jeje</h1>
+      <StayTeasers stays={paragraph.stays} heading={paragraph.heading} />
     </section>
   );
 }

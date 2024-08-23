@@ -9,14 +9,9 @@ display:
           label: Status
         operations:
           label: Funktioner
-      pager:
-        options:
-          expose:
-            items_per_page_options_all_label: '- Alla -'
       exposed_form:
         options:
           reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
       filters:
         bundle:
           expose:

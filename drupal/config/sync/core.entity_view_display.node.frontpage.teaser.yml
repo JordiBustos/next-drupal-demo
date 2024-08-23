@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.frontpage.field_content_elements
     - field.field.node.frontpage.field_excerpt
     - field.field.node.frontpage.field_image
-    - field.field.node.frontpage.field_selected_stays
     - node.type.frontpage
   module:
     - user
@@ -27,5 +26,4 @@ hidden:
   field_content_elements: true
   field_excerpt: true
   field_image: true
-  field_selected_stays: true
   langcode: true

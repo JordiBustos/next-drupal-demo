@@ -1,0 +1,10 @@
+uuid: 37af1011-0547-4ba8-834f-55a02d4d5d6e
+langcode: en
+status: true
+dependencies: {  }
+id: liftups_stays
+label: 'Liftups: Stays'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

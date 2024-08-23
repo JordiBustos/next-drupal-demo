@@ -1,0 +1,18 @@
+uuid: 7c4fa623-314f-4aba-87c1-7c355cbcc468
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.liftups_stays
+id: paragraph.liftups_stays.created
+field_name: created
+entity_type: paragraph
+bundle: liftups_stays
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

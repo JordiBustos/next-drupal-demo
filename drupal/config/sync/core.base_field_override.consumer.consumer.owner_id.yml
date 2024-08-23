@@ -1,0 +1,20 @@
+uuid: d705ae54-cbbe-4038-8687-7176ef8aee0e
+langcode: sv
+status: true
+dependencies:
+  module:
+    - consumers
+id: consumer.consumer.owner_id
+field_name: owner_id
+entity_type: consumer
+bundle: consumer
+label: 'User ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\consumers\Entity\Consumer::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

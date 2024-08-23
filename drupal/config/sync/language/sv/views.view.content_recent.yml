@@ -5,4 +5,3 @@ display:
       exposed_form:
         options:
           reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'

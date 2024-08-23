@@ -25,8 +25,6 @@ entity_config:
       enabled: false
     admin:
       enabled: false
-    content:
-      enabled: false
     footer:
       enabled: true
     main:
@@ -48,7 +46,7 @@ entity_config:
       query_load_enabled: true
       edges_enabled: true
       routes_enabled: true
-    stay:
+    stays:
       enabled: true
       query_load_enabled: true
       edges_enabled: true
@@ -58,8 +56,6 @@ entity_config:
       enabled: true
     accordion_item:
       enabled: true
-    description:
-      enabled: false
     file_attachments:
       enabled: true
     formatted_text:
@@ -68,12 +64,14 @@ entity_config:
       enabled: true
     image:
       enabled: true
+    liftups_articles:
+      enabled: true
+    liftups_stays:
+      enabled: true
     links:
       enabled: true
     listing_articles:
       enabled: true
-    promoted_stays:
-      enabled: false
     video:
       enabled: true
   taxonomy_term:
@@ -123,6 +121,13 @@ field_config:
         enabled: true
       field_image:
         enabled: true
+    stays:
+      body:
+        enabled: true
+      field_images:
+        enabled: true
+      field_price_per_guest:
+        enabled: true
   paragraph:
     accordion:
       field_accordion_items:
@@ -167,6 +172,16 @@ field_config:
         enabled: true
     image:
       field_image:
+        enabled: true
+    liftups_articles:
+      field_articles:
+        enabled: true
+      field_heading:
+        enabled: true
+    liftups_stays:
+      field_heading:
+        enabled: true
+      field_stays:
         enabled: true
     links:
       field_links:

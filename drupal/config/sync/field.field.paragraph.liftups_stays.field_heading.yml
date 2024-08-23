@@ -1,0 +1,19 @@
+uuid: 1a2de914-6788-437b-bd0c-2646a717e8ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.liftups_stays
+id: paragraph.liftups_stays.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: liftups_stays
+label: Heading
+description: 'Heading for the whole accordion'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

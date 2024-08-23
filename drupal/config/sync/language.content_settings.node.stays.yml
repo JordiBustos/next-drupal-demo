@@ -1,0 +1,18 @@
+uuid: ff5b7b37-602d-427f-b247-877f015dc5c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.stays
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.stays
+target_entity_type_id: node
+target_bundle: stays
+default_langcode: site_default
+language_alterable: true

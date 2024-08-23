@@ -1,0 +1,18 @@
+uuid: 6dfb1e91-e552-48c7-9fb1-78652a4ae32e
+langcode: sv
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.liftups_stays
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.liftups_stays
+target_entity_type_id: paragraph
+target_bundle: liftups_stays
+default_langcode: site_default
+language_alterable: false

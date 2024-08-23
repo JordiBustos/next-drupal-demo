@@ -1,0 +1,23 @@
+uuid: b5a5c8ac-6117-4843-bed9-3d63580be953
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_per_guest
+    - node.type.stays
+id: node.stays.field_price_per_guest
+field_name: field_price_per_guest
+entity_type: node
+bundle: stays
+label: 'Price per guest'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,30 @@
+uuid: e3435eb3-4999-49ec-8977-9e997bd1ecc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.liftups_stays.field_heading
+    - field.field.paragraph.liftups_stays.field_stays
+    - paragraphs.paragraphs_type.liftups_stays
+id: paragraph.liftups_stays.default
+targetEntityType: paragraph
+bundle: liftups_stays
+mode: default
+content:
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_stays:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

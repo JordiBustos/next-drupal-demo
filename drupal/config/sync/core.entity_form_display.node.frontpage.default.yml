@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.frontpage.field_content_elements
     - field.field.node.frontpage.field_excerpt
     - field.field.node.frontpage.field_image
-    - field.field.node.frontpage.field_selected_stays
     - image.style.thumbnail
     - node.type.frontpage
   module:
@@ -60,24 +59,6 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_selected_stays:
-    type: paragraphs
-    weight: 26
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
     third_party_settings: {  }
   langcode:
     type: language_select

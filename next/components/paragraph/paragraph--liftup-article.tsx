@@ -6,7 +6,6 @@ export function ParagraphLiftupArticle({
 }: {
   paragraph: FragmentParagraphLiftupArticleFragment;
 }) {
-  console.log(paragraph);
   return (
     <section>
       <ArticleTeasers

@@ -1,0 +1,18 @@
+uuid: 42c5e304-77c4-4698-ba9a-feb87ea19f43
+langcode: sv
+status: true
+dependencies:
+  module:
+    - consumers
+id: consumer.consumer.label
+field_name: label
+entity_type: consumer
+bundle: consumer
+label: Etikett
+description: 'The consumer label.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

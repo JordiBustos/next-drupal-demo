@@ -6,5 +6,5 @@ interface StayProps {
 
 export function NodeStay({ stay }: StayProps) {
   console.log("node:", stay);
-  return <article>.</article>;
+  return <article>hola hola</article>;
 }
