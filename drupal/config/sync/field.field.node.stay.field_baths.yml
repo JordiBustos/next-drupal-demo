@@ -1,0 +1,25 @@
+uuid: 431aeb59-8bdd-494b-9f57-d0f12ee6789f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_baths
+    - node.type.stay
+id: node.stay.field_baths
+field_name: field_baths
+entity_type: node
+bundle: stay
+label: Baths
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

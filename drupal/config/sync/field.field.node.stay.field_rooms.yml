@@ -1,0 +1,25 @@
+uuid: 7090d4c7-8b5a-48e5-a750-6a97ba63d3c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rooms
+    - node.type.stay
+id: node.stay.field_rooms
+field_name: field_rooms
+entity_type: node
+bundle: stay
+label: Rooms
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,302 @@
+uuid: 721fd22c-2d51-4b1e-9efb-b6e1b4f96a5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.stay.body
+    - field.field.node.stay.field_additional_rules
+    - field.field.node.stay.field_address
+    - field.field.node.stay.field_baths
+    - field.field.node.stay.field_bed_images
+    - field.field.node.stay.field_beds
+    - field.field.node.stay.field_carbon_monoxide_alarm
+    - field.field.node.stay.field_check_in
+    - field.field.node.stay.field_check_out
+    - field.field.node.stay.field_close_date
+    - field.field.node.stay.field_description_highlights
+    - field.field.node.stay.field_guests
+    - field.field.node.stay.field_host
+    - field.field.node.stay.field_images
+    - field.field.node.stay.field_is_closed
+    - field.field.node.stay.field_max_guests
+    - field.field.node.stay.field_neighborhood
+    - field.field.node.stay.field_parties
+    - field.field.node.stay.field_pets
+    - field.field.node.stay.field_price_per_guest
+    - field.field.node.stay.field_remaining_guests
+    - field.field.node.stay.field_rooms
+    - field.field.node.stay.field_smoke_alarm
+    - field.field.node.stay.field_smoking
+    - field.field.node.stay.field_stairs
+    - node.type.stay
+  module:
+    - address
+    - datetime
+    - media_library
+    - paragraphs
+    - path
+    - text
+id: node.stay.default
+targetEntityType: node
+bundle: stay
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_rules:
+    type: text_textarea
+    weight: 133
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_address:
+    type: address_default
+    weight: 134
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  field_baths:
+    type: number
+    weight: 125
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_bed_images:
+    type: media_library_widget
+    weight: 141
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_beds:
+    type: number
+    weight: 124
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_carbon_monoxide_alarm:
+    type: boolean_checkbox
+    weight: 137
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_check_in:
+    type: string_textfield
+    weight: 129
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_check_out:
+    type: string_textfield
+    weight: 130
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_close_date:
+    type: datetime_default
+    weight: 143
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description_highlights:
+    type: paragraphs
+    weight: 139
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_guests:
+    type: number
+    weight: 122
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_host:
+    type: entity_reference_autocomplete
+    weight: 126
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_images:
+    type: media_library_widget
+    weight: 140
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_is_closed:
+    type: boolean_checkbox
+    weight: 145
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_max_guests:
+    type: number
+    weight: 131
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_neighborhood:
+    type: text_textarea
+    weight: 138
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_parties:
+    type: boolean_checkbox
+    weight: 132
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_pets:
+    type: boolean_checkbox
+    weight: 128
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_price_per_guest:
+    type: number
+    weight: 142
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_remaining_guests:
+    type: number
+    weight: 144
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_rooms:
+    type: number
+    weight: 123
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_smoke_alarm:
+    type: boolean_checkbox
+    weight: 135
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_smoking:
+    type: boolean_checkbox
+    weight: 127
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_stairs:
+    type: boolean_checkbox
+    weight: 136
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

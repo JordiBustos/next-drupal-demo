@@ -1,0 +1,21 @@
+uuid: 4951ba71-0de2-4a09-8d21-c2186e66b9e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_school
+field_name: field_school
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

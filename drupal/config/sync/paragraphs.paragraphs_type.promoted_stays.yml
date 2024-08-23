@@ -1,0 +1,10 @@
+uuid: 23f13f85-2364-46ba-876a-e14a10bc6329
+langcode: en
+status: true
+dependencies: {  }
+id: promoted_stays
+label: 'Promoted stays'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

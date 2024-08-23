@@ -1,0 +1,11 @@
+uuid: 6dd627d5-d452-4d1f-966b-3f6155c672ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.stay
+id: node.stay
+target_entity_type_id: node
+target_bundle: stay
+default_langcode: site_default
+language_alterable: false

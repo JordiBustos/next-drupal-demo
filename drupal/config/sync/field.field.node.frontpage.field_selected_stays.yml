@@ -1,0 +1,61 @@
+uuid: af8b7e88-4c68-4486-b4ea-567a9c68af90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_selected_stays
+    - node.type.frontpage
+    - paragraphs.paragraphs_type.promoted_stays
+  module:
+    - entity_reference_revisions
+id: node.frontpage.field_selected_stays
+field_name: field_selected_stays
+entity_type: node
+bundle: frontpage
+label: 'Promoted stays'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      promoted_stays: promoted_stays
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 13
+        enabled: false
+      accordion_item:
+        weight: 14
+        enabled: false
+      description:
+        weight: 15
+        enabled: false
+      file_attachments:
+        weight: 16
+        enabled: false
+      formatted_text:
+        weight: 17
+        enabled: false
+      hero:
+        weight: 18
+        enabled: false
+      image:
+        weight: 19
+        enabled: false
+      links:
+        weight: 20
+        enabled: false
+      listing_articles:
+        weight: 21
+        enabled: false
+      promoted_stays:
+        weight: 12
+        enabled: true
+      video:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

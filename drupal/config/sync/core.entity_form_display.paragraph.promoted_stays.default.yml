@@ -1,0 +1,25 @@
+uuid: 50caf7dd-5450-483e-90fb-1d994548c6b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promoted_stays.field_stays
+    - paragraphs.paragraphs_type.promoted_stays
+id: paragraph.promoted_stays.default
+targetEntityType: paragraph
+bundle: promoted_stays
+mode: default
+content:
+  field_stays:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

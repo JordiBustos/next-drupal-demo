@@ -1,0 +1,29 @@
+uuid: 3464b251-3e5b-42ec-8ae2-5993dc9839f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stays
+    - node.type.stay
+    - paragraphs.paragraphs_type.promoted_stays
+id: paragraph.promoted_stays.field_stays
+field_name: field_stays
+entity_type: paragraph
+bundle: promoted_stays
+label: Stays
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      stay: stay
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

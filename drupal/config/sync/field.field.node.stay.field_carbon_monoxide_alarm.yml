@@ -1,0 +1,21 @@
+uuid: 3e4d6d15-df23-4582-8299-f1f10b455c2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carbon_monoxide_alarm
+    - node.type.stay
+id: node.stay.field_carbon_monoxide_alarm
+field_name: field_carbon_monoxide_alarm
+entity_type: node
+bundle: stay
+label: 'Carbon monoxide alarm'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

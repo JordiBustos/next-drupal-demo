@@ -1,0 +1,10 @@
+uuid: 2ceba973-a087-4817-88c3-8507fde28044
+langcode: en
+status: true
+dependencies: {  }
+id: description
+label: 'Stay Description '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 5ef5a6a4-8459-4f28-a972-ecc8534a15c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_smoke_alarm
+    - node.type.stay
+id: node.stay.field_smoke_alarm
+field_name: field_smoke_alarm
+entity_type: node
+bundle: stay
+label: 'Smoke alarm'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
