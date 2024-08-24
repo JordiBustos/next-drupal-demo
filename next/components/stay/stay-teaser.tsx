@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
 import type { FragmentStayTeaserFragment } from "@/lib/gql/graphql";
@@ -10,9 +10,9 @@ interface StayTeaserProps {
 export function StayTeaser({ stay }: StayTeaserProps) {
   const { t } = useTranslation();
   const host = stay.author?.name;
-  const firstImage = stay.images[0].mediaImage 
+  const firstImage = stay.images[0].mediaImage;
 
-  console.log(stay)
+  console.log(stay);
   return (
     <Link
       href={stay.path}
@@ -34,9 +34,7 @@ export function StayTeaser({ stay }: StayTeaserProps) {
         {host && <>{t("hosted-by", { host })} </>}
       </div>
       <p>
-        <span className="font-bold me-1">
-          ${stay.pricePerGuest}
-        </span>
+        <span className="font-bold me-1">${stay.pricePerGuest}</span>
         {t("per-guest")}
       </p>
     </Link>

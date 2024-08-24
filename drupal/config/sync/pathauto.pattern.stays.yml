@@ -1,0 +1,35 @@
+uuid: 0ea55103-8d8d-4493-944a-35d1e03d8869
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: stays
+label: Stays
+type: 'canonical_entities:node'
+pattern: 'stay/[node:title]'
+selection_criteria:
+  5aefcc34-00fc-4791-9707-34dd92197d6d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5aefcc34-00fc-4791-9707-34dd92197d6d
+    context_mapping:
+      node: node
+    bundles:
+      stays: stays
+  fea735e8-b8d2-424a-8387-e9c1c7ac7fc8:
+    id: language
+    negate: false
+    uuid: fea735e8-b8d2-424a-8387-e9c1c7ac7fc8
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      fi: fi
+      sv: sv
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

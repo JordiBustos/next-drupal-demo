@@ -1,0 +1,25 @@
+uuid: 0f498eb0-12da-4992-adde-81acdc3d8b34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.stays
+  module:
+    - address
+id: node.stays.field_location
+field_name: field_location
+entity_type: node
+bundle: stays
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

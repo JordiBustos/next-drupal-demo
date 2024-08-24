@@ -1,23 +1,23 @@
-uuid: b5a5c8ac-6117-4843-bed9-3d63580be953
+uuid: 29edd724-be71-4c98-8c69-a43f07814db3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_price_per_guest
+    - field.storage.node.field_maximum_guests
     - node.type.stays
-id: node.stays.field_price_per_guest
-field_name: field_price_per_guest
+id: node.stays.field_maximum_guests
+field_name: field_maximum_guests
 entity_type: node
 bundle: stays
-label: 'Price per guest'
+label: 'Maximum guests'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   min: 1
   max: null
-  prefix: $
+  prefix: ''
   suffix: ''
 field_type: integer

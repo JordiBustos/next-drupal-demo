@@ -5,7 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.stays.body
+    - field.field.node.stays.field_activities
+    - field.field.node.stays.field_check_in
+    - field.field.node.stays.field_check_out
+    - field.field.node.stays.field_extra_information
     - field.field.node.stays.field_images
+    - field.field.node.stays.field_location
+    - field.field.node.stays.field_maximum_guests
+    - field.field.node.stays.field_neighborhood_highlights
     - field.field.node.stays.field_price_per_guest
     - node.type.stays
   module:
@@ -30,6 +37,13 @@ content:
     weight: 100
     region: content
 hidden:
+  field_activities: true
+  field_check_in: true
+  field_check_out: true
+  field_extra_information: true
   field_images: true
+  field_location: true
+  field_maximum_guests: true
+  field_neighborhood_highlights: true
   field_price_per_guest: true
   langcode: true

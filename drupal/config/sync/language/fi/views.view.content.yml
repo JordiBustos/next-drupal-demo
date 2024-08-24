@@ -10,6 +10,7 @@ display:
       exposed_form:
         options:
           reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
       filters:
         status:
           expose:

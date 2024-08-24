@@ -1,0 +1,19 @@
+uuid: e18dfa78-8a77-4568-ab8b-e24e25a13500
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_neighborhood_highlights
+    - node.type.stays
+id: node.stays.field_neighborhood_highlights
+field_name: field_neighborhood_highlights
+entity_type: node
+bundle: stays
+label: 'Neighborhood highlights'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

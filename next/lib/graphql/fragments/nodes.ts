@@ -55,8 +55,8 @@ export const FRAGMENT_NODE_STAY = graphql(`
       ...FragmentTextSummary
     }
     images {
-      ... on MediaImage {
-        id
+      mediaImage {
+        ...FragmentImage
       }
     }
     author {
@@ -65,6 +65,19 @@ export const FRAGMENT_NODE_STAY = graphql(`
         ...FragmentUser
       }
     }
+    pricePerGuest
+    activities
+    checkIn
+    checkOut
+    extraInformation
+    location {
+      country {
+        name
+      }
+      locality
+    }
+    maximumGuests
+    neighborhoodHighlights
     translations {
       ...FragmentNodeTranslation
     }

@@ -124,7 +124,21 @@ field_config:
     stays:
       body:
         enabled: true
+      field_activities:
+        enabled: true
+      field_check_in:
+        enabled: true
+      field_check_out:
+        enabled: true
+      field_extra_information:
+        enabled: true
       field_images:
+        enabled: true
+      field_location:
+        enabled: true
+      field_maximum_guests:
+        enabled: true
+      field_neighborhood_highlights:
         enabled: true
       field_price_per_guest:
         enabled: true

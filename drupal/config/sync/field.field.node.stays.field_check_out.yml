@@ -1,0 +1,19 @@
+uuid: 778f6f85-0bc2-44c4-9ea9-1fc8ac7616d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_check_out
+    - node.type.stays
+id: node.stays.field_check_out
+field_name: field_check_out
+entity_type: node
+bundle: stays
+label: 'Check out'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

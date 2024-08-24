@@ -5,10 +5,21 @@ display:
       fields:
         status:
           label: Tila
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Kaikki -'
       exposed_form:
         options:
           reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
       filters:
         status:
           expose:
             label: Tila
+  page_2:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Kaikki -'

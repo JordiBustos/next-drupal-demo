@@ -33,6 +33,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      liftups_stays: liftups_stays
       hero: hero
       formatted_text: formatted_text
       image: image
@@ -41,41 +42,40 @@ settings:
       video: video
       listing_articles: listing_articles
       file_attachments: file_attachments
-      liftups_stays: liftups_stays
       liftups_articles: liftups_articles
     negate: 0
     target_bundles_drag_drop:
       accordion:
-        weight: -10
+        weight: -17
         enabled: true
       accordion_item:
-        weight: -12
+        weight: -19
         enabled: false
       file_attachments:
-        weight: 10
-        enabled: true
-      formatted_text:
         weight: -14
         enabled: true
+      formatted_text:
+        weight: -21
+        enabled: true
       hero:
-        weight: -15
+        weight: -22
         enabled: true
       image:
-        weight: -13
+        weight: -20
         enabled: true
       liftups_articles:
-        weight: 17
+        weight: -13
         enabled: true
       liftups_stays:
-        weight: 12
+        weight: -23
         enabled: true
       links:
-        weight: -11
+        weight: -18
         enabled: true
       listing_articles:
-        weight: 9
+        weight: -15
         enabled: true
       video:
-        weight: -9
+        weight: -16
         enabled: true
 field_type: entity_reference_revisions
