@@ -5,7 +5,6 @@ import { useState } from "react";
 
 import { MainMenu, MenuToggle } from "@/components/main-menu/main-menu";
 import SearchIcon from "@/styles/icons/search.svg";
-import WunderIcon from "@/styles/icons/wunder.svg";
 import type { MenuType } from "@/types/graphql";
 
 import { LanguageSwitcher } from "./language-switcher";
@@ -43,7 +42,7 @@ function HomeLink() {
   const { t } = useTranslation();
   return (
     <Link href="/" locale={locale} className="inline">
-      <WunderIcon className="w-32" />
+      Home
       <span className="sr-only">{t("homepage-link")}</span>
     </Link>
   );

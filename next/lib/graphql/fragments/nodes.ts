@@ -51,9 +51,7 @@ export const FRAGMENT_NODE_ARTICLE = graphql(`
 export const FRAGMENT_NODE_STAY = graphql(`
   fragment FragmentNodeStay on NodeStay {
     sticky
-    body {
-      ...FragmentTextSummary
-    }
+    bodyText
     images {
       mediaImage {
         ...FragmentImage
@@ -75,6 +73,8 @@ export const FRAGMENT_NODE_STAY = graphql(`
         name
       }
       locality
+      givenName
+      familyName
     }
     maximumGuests
     neighborhoodHighlights

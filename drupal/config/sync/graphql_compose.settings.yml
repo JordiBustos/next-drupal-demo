@@ -122,10 +122,11 @@ field_config:
       field_image:
         enabled: true
     stays:
-      body:
-        enabled: true
       field_activities:
         enabled: true
+      field_body:
+        enabled: true
+        name_sdl: bodyText
       field_check_in:
         enabled: true
       field_check_out:

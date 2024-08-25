@@ -1,0 +1,19 @@
+uuid: 89db40e0-7804-4c6a-a0ea-4687f1867928
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.stays
+id: node.stays.field_body
+field_name: field_body
+entity_type: node
+bundle: stays
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

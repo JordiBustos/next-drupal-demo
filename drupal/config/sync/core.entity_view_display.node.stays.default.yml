@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.stays.body
     - field.field.node.stays.field_activities
+    - field.field.node.stays.field_body
     - field.field.node.stays.field_check_in
     - field.field.node.stays.field_check_out
     - field.field.node.stays.field_extra_information
@@ -16,26 +16,25 @@ dependencies:
     - node.type.stays
   module:
     - address
-    - text
     - user
 id: node.stays.default
 targetEntityType: node
 bundle: stays
 mode: default
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 101
-    region: content
   field_activities:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_body:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_check_in:
     type: string

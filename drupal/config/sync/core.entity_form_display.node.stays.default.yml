@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.stays.body
     - field.field.node.stays.field_activities
+    - field.field.node.stays.field_body
     - field.field.node.stays.field_check_in
     - field.field.node.stays.field_check_out
     - field.field.node.stays.field_extra_information
@@ -18,22 +18,11 @@ dependencies:
     - address
     - media_library
     - path
-    - text
 id: node.stays.default
 targetEntityType: node
 bundle: stays
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
@@ -43,6 +32,14 @@ content:
   field_activities:
     type: string_textarea
     weight: 125
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_body:
+    type: string_textarea
+    weight: 131
     region: content
     settings:
       rows: 5
